@@ -1,9 +1,9 @@
 {
-	"name": "dev-pipeline",
+	"name": "dev-pipeline2",
 	"properties": {
 		"activities": [
 			{
-				"name": "Copy data",
+				"name": "Copy data1",
 				"type": "Copy",
 				"dependsOn": [],
 				"policy": {
@@ -17,7 +17,7 @@
 				"typeProperties": {
 					"source": {
 						"type": "AzureSqlSource",
-						"sqlReaderQuery": "SELECT TOP 1000 *\r\nFROM DIM_HOSPITAL",
+						"sqlReaderQuery": "SELECT *\r\nFROM DIM_ACCOUNT",
 						"queryTimeout": "02:00:00",
 						"partitionOption": "None"
 					},
@@ -44,7 +44,7 @@
 						"type": "DatasetReference",
 						"parameters": {
 							"schemaName": "dbo",
-							"tableName": "DIM_HOSPITAL"
+							"tableName": "DIM_ACCOUNT"
 						}
 					}
 				],
@@ -54,7 +54,7 @@
 						"type": "DatasetReference",
 						"parameters": {
 							"schemaName": "dbo",
-							"tableName": "TEST_DIM_HOSP"
+							"tableName": "TEST_DIM_ACCOUNT"
 						}
 					}
 				]
