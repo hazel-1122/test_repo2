@@ -17,7 +17,7 @@
 				"typeProperties": {
 					"source": {
 						"type": "AzureSqlSource",
-						"sqlReaderQuery": "SELECT TOP 10 *\r\nFROM DIM_HOSPITAL",
+						"sqlReaderQuery": "SELECT TOP 100 *\r\nFROM DIM_HOSPITAL",
 						"queryTimeout": "02:00:00",
 						"partitionOption": "None"
 					},
